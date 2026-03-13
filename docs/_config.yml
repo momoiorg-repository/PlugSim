@@ -1,14 +1,16 @@
 title: PlugSim
 description: METADATA.yaml-driven plugin orchestrator for NVIDIA Isaac Sim + ROS 2
-baseurl: "/plugsim"
+baseurl: "/PlugSim"
 url: "https://momoiorg-repository.github.io"
 repository: momoiorg-repository/plugsim
 
 remote_theme: just-the-docs/just-the-docs
+color_scheme: dark
 
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
+  - jekyll-include-cache
 
 search_enabled: true
 nav_sort: case_insensitive
