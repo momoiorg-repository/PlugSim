@@ -1,9 +1,4 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
-gem "jekyll-seo-tag"
-gem "jekyll-include-cache"
-
-group :jekyll_plugins do
-  gem "jekyll-remote-theme"
-end
+gem "github-pages", group: :jekyll_plugins
+gem "jekyll-remote-theme"

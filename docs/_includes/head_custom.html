@@ -1,9 +1,0 @@
-<script>
-  // Restore saved colour scheme before first render (prevents flash of wrong theme)
-  (function () {
-    var saved = localStorage.getItem('jtd-theme');
-    if (saved === 'dark' || saved === 'light') {
-      jtd.setTheme(saved);
-    }
-  })();
-</script>
