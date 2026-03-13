@@ -7,10 +7,11 @@ repository: momoiorg-repository/plugsim
 remote_theme: just-the-docs/just-the-docs
 color_scheme: dark
 
+permalink: pretty
+
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
-  - jekyll-include-cache
 
 defaults:
   - scope:
