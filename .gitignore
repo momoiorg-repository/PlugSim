@@ -1,6 +1,9 @@
 # Claude Code memory
 .claude/
 
+# Just the Docs theme (local copy, installed as remote_theme on GitHub Pages)
+just-the-docs/
+
 # ROS workspaces (built artifacts, not source)
 IsaacSim-ros_workspaces/
 

@@ -40,8 +40,11 @@ cd plugsim
 Plugin `assets/` directories are separate git repositories and are not included here. Clone them into the appropriate plugin folders:
 
 ```bash
-git clone <example_factory_world_assets_repo> plugin/example_factory_world/assets
-git clone <example_melon_ros2_assets_repo>    plugin/example_melon_ros2/assets
+git clone https://github.com/momoiorg-repository/factory_world1.git \
+    plugin/example_factory_world/assets
+
+git clone https://github.com/momoiorg-repository/melon_ros2.git \
+    plugin/example_melon_ros2
 ```
 
 ### 3. Install the PlugSim CLI
