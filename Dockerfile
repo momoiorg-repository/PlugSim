@@ -36,9 +36,10 @@ RUN apt-get update \
         ros-${ROS_DISTRO}-desktop \
     && rm -rf /var/lib/apt/lists/*
 
-# 5. Add ROS 2 setup to bashrc
-RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
-RUN echo "export XDG_RUNTIME_DIR=/tmp/runtime-root" >> ~/.bash
+# 5. Add ROS 2 setup to bashrc (sources from mounted IsaacSim-ros_workspaces)
+RUN echo "source /IsaacSim-ros_workspaces/build_ws/jazzy/jazzy_ws/install/setup.bash" >> ~/.bashrc \
+    && echo "source /IsaacSim-ros_workspaces/build_ws/jazzy/isaac_sim_ros_ws/install/setup.bash" >> ~/.bashrc
+RUN echo "export XDG_RUNTIME_DIR=/tmp/runtime-root" >> ~/.bashrc
 
 # Default command
 CMD ["/bin/bash"]

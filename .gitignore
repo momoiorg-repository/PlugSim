@@ -1,6 +1,16 @@
-# データファイル
-plugin/robot/*
-plugin/world/*
+# Claude Code memory
+.claude/
+
+# ROS workspaces (built artifacts, not source)
+IsaacSim-ros_workspaces/
+
+# Old plugin subdirectory layout (superseded by flat plugin/)
+plugin/robot/
+plugin/world/
+
+# Plugin directories that are separate git repos (cloned independently)
+plugin/example_melon_ros2/
+plugin/example_factory_world/assets/
 
 # Isaac Sim キャッシュとログファイル
 isaac-sim/cache/
@@ -11,6 +21,8 @@ isaac-sim/documents/
 # 必要な設定ファイルのみ保持
 !isaac-sim/config/
 !isaac-sim/config/isaacsim.exp.base.kit
+
+generated*
 
 # Docker 関連
 .dockerignore
