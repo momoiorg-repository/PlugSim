@@ -1,0 +1,92 @@
+# Claude Code memory
+.claude/
+
+# Just the Docs theme (local copy, installed as remote_theme on GitHub Pages)
+just-the-docs/
+
+# ROS workspaces (built artifacts, not source)
+IsaacSim-ros_workspaces/
+
+# Old plugin subdirectory layout (superseded by flat plugin/)
+plugin/robot/
+plugin/world/
+
+# Plugin directories that are separate git repos (cloned independently)
+plugin/example_melon_ros2/
+plugin/example_factory_world/assets/
+
+# Isaac Sim キャッシュとログファイル
+isaac-sim/cache/
+isaac-sim/logs/
+isaac-sim/data/
+isaac-sim/documents/
+
+# 必要な設定ファイルのみ保持
+!isaac-sim/config/
+!isaac-sim/config/isaacsim.exp.base.kit
+
+generated*
+
+# Docker 関連
+.dockerignore
+
+# システムファイル
+.DS_Store
+Thumbs.db
+
+# エディタ設定
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ログファイル
+*.log
+
+# 一時ファイル
+*.tmp
+*.temp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 仮想環境
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# 環境変数ファイル
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

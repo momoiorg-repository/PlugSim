@@ -1,0 +1,47 @@
+title: PlugSim
+description: METADATA.yaml-driven plugin orchestrator for NVIDIA Isaac Sim + ROS 2
+baseurl: "/PlugSim"
+url: "https://momoiorg-repository.github.io"
+repository: momoiorg-repository/plugsim
+
+remote_theme: just-the-docs/just-the-docs
+color_scheme: dark
+
+permalink: pretty
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+search_enabled: true
+nav_sort: case_insensitive
+
+back_to_top: true
+back_to_top_text: "Back to top"
+
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/momoiorg-repository/plugsim"
+gh_edit_branch: "plugsim"
+gh_edit_source: docs
+gh_edit_view_mode: "edit"
+
+enable_copy_code_button: true
+heading_anchors: true
+
+callouts:
+  note:
+    title: Note
+    color: blue
+  warning:
+    title: Warning
+    color: yellow
+  tip:
+    title: Tip
+    color: green
